@@ -1,1 +1,46 @@
+<!DOCTYPE html>
 
+<html>
+		
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<title>Tabelle WAW</title>
+
+		</head>
+		<table border="1" width="20%">
+		<tr>
+			<th colspan="4" bgcolor="#E9F1E9">Gruppe: The Masters</th>
+		</tr>
+		
+		<tr bgcolor="#CFE3D0">
+			<td>Vorname</td>
+			<td>Name</td>
+			<td>Studiengang</td>
+			<td>Matrikelnummer</td>
+		</tr>
+		
+		<tr bgcolor="E9F1E9">
+			<td>Igor</td>
+			<td>Master</td>
+			<td>Informatik</td>
+			<td>11234</td>
+		</tr>
+		
+		<tr bgcolor="#CFE3D0">
+			<td>Marcell</td>
+			<td>Kirby</td>
+			<td>Medieninformatik</td>
+			<td>10324</td>
+		</tr>
+		
+		<tr bgcolor="E9F1E9">
+			<td>Thomas</td>
+			<td>Smits</td>
+			<td>Informatik</td>
+			<td>11111</td>
+		</tr>
+		
+		
+
+</html>
