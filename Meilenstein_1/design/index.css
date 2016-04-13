@@ -10,6 +10,7 @@
 	font-style: normal;
 }
 
+
 @font-face {
 	font-family: 'museo-sans-300';
 	src: url('museo-sans-300.eot');
@@ -336,5 +337,7 @@ footer a img {
 	header p {
 		text-align: justify;
 	}
+	
+	
 
 }
