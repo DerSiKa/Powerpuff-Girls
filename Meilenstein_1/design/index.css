@@ -57,6 +57,34 @@
 	font-style: normal;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.active {
+    background-color: #E07F52;
+}
+
 body {
 	font-family: 'museo-sans-300';
 	font-size: 16px;
@@ -67,7 +95,7 @@ body {
 	
 }
 
-header h1 {
+	h1 {
 	color: #E07F52;
 	display: block;
 	margin: 0px;
@@ -87,7 +115,7 @@ header {
 }
 
 #main {
-	color: #ff8040;
+	color: #E07F52;
 	padding: 16px 0px;
 	text-align: center;
 	width: 100%;
@@ -120,7 +148,7 @@ td {
 button {
 	color: #000000;
 	margin: 0px;
-	background-color: #ff8040;	
+	background-color: #E07F52;	
 	border-radius: 20px;
 	border: 2px solid #000000;
 	height: 24px;
