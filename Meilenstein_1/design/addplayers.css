@@ -132,15 +132,15 @@ body{
 	text-align: center;
 	background-color: #000000;
 	background-image: url('./basketball3.jpg');
+	
 }
 
-body section{
-	display: inline-block;
-	margin: 116px;
-	padding: 16px;
-	vertical-align: top;
-	border-radius: 8px;
+body > section{
 	
+	margin: 80px;
+	padding: 80px;
+	border-radius: 0px;
+	background-image: url('./Hintergrund-schwarz.png');	
 }
 
 #addplayer-table {
@@ -182,14 +182,10 @@ footer {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	text-align: center;
-	background-color: #000000;
-		
+	background-color: #000000;		
 }
-
-
 
 footer img {
 	width: 70%;
-	margin-left: 0px;
-	
+	margin-left: 0px;	
 }

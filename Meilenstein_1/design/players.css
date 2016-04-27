@@ -106,15 +106,6 @@ h1 {
 }
 
 
-
-header section {
-	color: #E07F52;
-	padding: 16px 0px;
-	text-align: left;
-	width: 100%;
-	padding: 0px 0px;
-	background-color: #000000;
-}
 body{
 	background-color: black;
 	background-position: 0px 0px;
@@ -125,12 +116,13 @@ body{
 	background-image: url('./basketball3.jpg');
 }
 
-body section{
-	display: inline-block;
-	margin: 116px;
+body > section{
+	
+	margin: 16px;
 	padding: 16px;
-	vertical-align: top;
-	border-radius: 8px;
+	border-radius: 0px;
+	background-image: url('./Hintergrund-schwarz.png');	
+	background-repeat: no-repeat;
 	
 }
 

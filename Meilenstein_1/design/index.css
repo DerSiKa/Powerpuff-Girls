@@ -123,15 +123,23 @@ body{
 	text-align: center;
 	background-color: #000000;
 	background-image: url('./basketball3.jpg');
+	
 }
 
-body section{
-	display: inline-block;
-	margin: 116px;
-	padding: 16px;
-	vertical-align: top;
-	border-radius: 8px;
-	
+section{
+	text-algin: center;
+	margin: 8px;
+	padding: 8px;
+	border-radius: 8px;	
+	background-image: url('./Hintergrund-schwarz.png');
+	background-repeat: no-repeat;
+}
+section div{
+	display: inline-box;
+	text-algin: center;
+	margin: 80px;
+	padding: 80px;	
+	background-color: transparent;
 }
 
 #addplayer-table {
