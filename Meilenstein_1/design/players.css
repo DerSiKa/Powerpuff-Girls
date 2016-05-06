@@ -85,16 +85,12 @@ li a:hover:not(.active) {
     background-color: #E07F52;
 }
 
-
-body {
-	font-family: 'museo-sans-300';
-	font-size: 16px;
-	color: #E07F52;
-	width: 100%;
-	padding: 64px 0px;
-	background-color: #ffffff;
-	
+header {
+	background-image: url('./basketball3.jpg');
+	background-color: #000000;	
 }
+
+
 
 h1 {
 	color: #E07F52;
@@ -107,28 +103,23 @@ h1 {
 
 
 body{
+	font-family: 'museo-sans-300';
+	font-size: 16px;
+	color: #E07F52;
+	width: 100%;
 	background-color: black;
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	text-align: center;
 	background-color: #000000;
-	background-image: url('./basketball3.jpg');
 }
 
-body > section{
-	
-	margin: 16px;
-	padding: 16px;
+section{
 	border-radius: 0px;
 	background-image: url('./Hintergrund-schwarz.png');	
-	background-repeat: no-repeat;
-	
 }
 
-#addplayer-table {
-	color: #E07F52;
-}
 
 table {
 		margin-left:auto;
@@ -139,40 +130,11 @@ td {
 	text-align: left;
 }
 
-#checkbox {
-	text-align: center;
-}
-
-#button {
-	color: #000000;
-	text-align: center;
-}
-
-button {
-	color: #000000;
-	margin: 0px;
-	background-color: #E07F52;	
-	border-radius: 20px;
-	border: 2px solid #000000;
-	height: 24px;
-	cursor: pointer;
-	width: 100px; 
-}
-
 footer {
 	background-image: url('./basketball2.jpg');
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	text-align: center;
-	background-color: #000000;
-		
+	background-color: #000000;		
 }
-
-
 
 footer img {
 	width: 70%;
-	margin-left: 0px;
-	
 }
