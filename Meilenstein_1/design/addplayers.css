@@ -98,15 +98,6 @@ h1 {
 	font-family: 'source-sans-700';
 	font-size: 60px;
 }
-section h1{
-	color: #E07F52;
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'source-sans-700';
-	font-size: 40px;
-	
-}
 
 body{
 	font-family: 'museo-sans-300';
@@ -126,18 +117,16 @@ section{
 	background-image: url('./Hintergrund-schwarz.png');	
 }
 
-#addplayer-table {
-	color: #E07F52;
-}
 
 table {
-		margin-left:auto;
-		margin-right:auto;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 td {
 	text-align: left;
 }
+
 
 #checkbox {
 	text-align: center;
@@ -150,7 +139,6 @@ td {
 
 button {
 	color: #000000;
-	margin: 0px;
 	background-color: #E07F52;	
 	border-radius: 20px;
 	border: 2px solid #000000;
