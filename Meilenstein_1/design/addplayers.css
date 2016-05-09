@@ -1,60 +1,60 @@
 @font-face {
-	font-family: 'icon';
-	src: url('icon.eot');
-	src: url('icon.eot?#iefix') format('embedded-opentype'),
-		 url('icon.woff') format('woff'),
-		 url('icon.ttf') format('truetype'),
-		 url('icon.svg#icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icon';
+    src: url('icon.eot');
+    src: url('icon.eot?#iefix') format('embedded-opentype'),
+    url('icon.woff') format('woff'),
+    url('icon.ttf') format('truetype'),
+    url('icon.svg#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'museo-sans-300';
-	src: url('museo-sans-300.eot');
-	src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('museo-sans-300.woff2') format('woff2'),
-		 url('museo-sans-300.woff') format('woff'),
-		 url('museo-sans-300.ttf') format('truetype'),
-		 url('museo-sans-300.svg#museo_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'museo-sans-300';
+    src: url('museo-sans-300.eot');
+    src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
+    url('museo-sans-300.woff2') format('woff2'),
+    url('museo-sans-300.woff') format('woff'),
+    url('museo-sans-300.ttf') format('truetype'),
+    url('museo-sans-300.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'source-sans-300';
-	src: url('source-sans-300.eot');
-	src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-300.woff2') format('woff2'),
-		 url('source-sans-300.woff') format('woff'),
-		 url('source-sans-300.ttf') format('truetype'),
-		 url('source-sans-300.svg#source_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'source-sans-300';
+    src: url('source-sans-300.eot');
+    src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
+    url('source-sans-300.woff2') format('woff2'),
+    url('source-sans-300.woff') format('woff'),
+    url('source-sans-300.ttf') format('truetype'),
+    url('source-sans-300.svg#source_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'source-sans-400';
-	src: url('source-sans-400.eot');
-	src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-400.woff2') format('woff2'),
-		 url('source-sans-400.woff') format('woff'),
-		 url('source-sans-400.ttf') format('truetype'),
-		 url('source-sans-400.svg#source_sans400') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'source-sans-400';
+    src: url('source-sans-400.eot');
+    src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
+    url('source-sans-400.woff2') format('woff2'),
+    url('source-sans-400.woff') format('woff'),
+    url('source-sans-400.ttf') format('truetype'),
+    url('source-sans-400.svg#source_sans400') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'source-sans-700';
-	src: url('source-sans-700.eot');
-	src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-700.woff2') format('woff2'),
-		 url('source-sans-700.woff') format('woff'),
-		 url('source-sans-700.ttf') format('truetype'),
-		 url('source-sans-700.svg#source_sans700') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'source-sans-700';
+    src: url('source-sans-700.eot');
+    src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
+    url('source-sans-700.woff2') format('woff2'),
+    url('source-sans-700.woff') format('woff'),
+    url('source-sans-700.ttf') format('truetype'),
+    url('source-sans-700.svg#source_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 ul {
@@ -86,65 +86,62 @@ li a:hover:not(.active) {
 }
 
 header {
-	background-image: url('./basketball3.jpg');
+    background-image: url('./basketball3.jpg');
 }
 
 h1 {
-	color: #E07F52;
-	display: block;
-	margin: 0px;
-	font-family: 'source-sans-700';
-	font-size: 60px;
+    color: #E07F52;
+    display: block;
+    margin: 0;
+    font-family: 'source-sans-700', serif;
+    font-size: 60px;
 }
 
-body{
-	font-family: 'museo-sans-300';
-	font-size: 16px;
-	color: #E07F52;
-	background-repeat: no-repeat;
-	text-align: center;
-	background-color: #000000;
+body {
+    font-family: 'museo-sans-300', serif;
+    font-size: 16px;
+    color: #E07F52;
+    text-align: center;
+    background: #000000 no-repeat;
 }
 
-section{
-	border-radius: 0px;
-	background-image: url('./Hintergrund-schwarz.png');
+section {
+    border-radius: 0;
+    background-image: url('./Hintergrund-schwarz.png');
 }
-
 
 table {
-	margin-left:auto;
-	margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td {
-	text-align: left;
+    text-align: left;
 }
 
-
-.checkbox{
-	text-align: center;
+.checkbox {
+    text-align: center;
 }
 
-.buttonmitte{
-	color: #000000;
-	text-align: center;
+.buttonmitte {
+    color: #000000;
+    text-align: center;
 }
 
 .button {
-	color: #000000;
-	background-color: #E07F52;	
-	border-radius: 20px;
-	border: 2px solid #000000;
-	height: 24px;
-	cursor: pointer;
-	width: 100px; 
+    color: #000000;
+    background-color: #E07F52;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    height: 24px;
+    cursor: pointer;
+    width: 100px;
 }
 
 footer {
-	background-image: url('./basketball2.jpg');
+    background-image: url('./basketball2.jpg');
 }
 
 footer img {
-	width: 70%;
+    width: 70%;
 }
