@@ -1,5 +1,5 @@
 
-var regexNames = ([A-Za-zäÄöÖüÜß]);
+var regexNames = /^[a-zA-Z]+$/;
 var regexRuecken = ([4-15]);
 var regexGeb = ([1900-2015]);
 
@@ -52,4 +52,22 @@ function validateForm() {
     }
     
  
+ 
+ 
+ 
+ 
+ 	function sendForm(form) {
+  	var formData = new FormData(form);
+  	var xhr = new XMLHttpRequest();
+  	xhr.open('POST', form.action, true);
+  	xhr.onload = function(e) { ... };
+  	xhr.send(formData);
+  	return false;
+	}
+
+
+
+	function toggle(){
+	//bei klick nur favoriten zeigen
+	}
 }
