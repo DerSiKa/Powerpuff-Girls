@@ -31,16 +31,18 @@
 	</header>
 			
 	<section>
+
+		<h1>Hier f&uuml;gen Sie einen Spieler hinzu:</h1>
+
 	<form onsubmit="validateForm()">			 
 			<table>
-			<h1>Hier f&uuml;gen Sie einen Spieler hinzu:</h1>	
 						
-			<tr><td>Vorname</td> <td><input name= "vorname" type = "text" size = "30" maxlength = "40"></td></tr><br>
-			<tr><td>Nachname</td> <td><input name= "nachname" type = "text" size = "30" maxlength = "40"></td></tr><br>
-		    <tr><td>Verein</td><td> <input name= "verein" type = "text" size = "30" maxlength = "40"></td></tr><br>
-			<tr><td>Headcoach</td> <td><input name= "hcoach" type = "text" size = "30" maxlength = "40"></td></tr><br>
-			<tr><td>Assistant Coach</td> <td><input name= "asscoach" type = "text" size = "30" maxlength = "40"></td></tr><br>
-			<tr><td>Aktiv </td><td id= "checkbox"><input type = "checkbox" size = "30" maxlength = "40">Ja							
+			<tr><td>Vorname</td> <td><input name= "vorname" type = "text" size = "30" maxlength = "40"></td></tr>
+			<tr><td>Nachname</td> <td><input name= "nachname" type = "text" size = "30" maxlength = "40"></td></tr>
+		    <tr><td>Verein</td><td> <input name= "verein" type = "text" size = "30" maxlength = "40"></td></tr>
+			<tr><td>Headcoach</td> <td><input name= "hcoach" type = "text" size = "30" maxlength = "40"></td></tr>
+			<tr><td>Assistant Coach</td> <td><input name= "asscoach" type = "text" size = "30" maxlength = "40"></td></tr>
+			<tr><td>Aktiv </td><td class= "checkbox"><input type = "checkbox" size = "30" maxlength = "40">Ja
 			<tr><td>Position</td> <td>
 			<select name="position" size="1">
 			<option value="center">Center</option>
@@ -48,15 +50,15 @@
 			<option value="powerforward">Power Forward</option>
 			<option value="wing" selected="selected">Wing</option>
 			<option value="smallforward">Small Forward</option>
-			</select></td></tr><br>
+			</select></td></tr>
 												
-			<tr><td>R&uuml;ckennummer</td> <td> <input name= "rnr" type = "number" size = "30" maxlength = "40"  /></td></tr><br>
-			<tr><td>Geburtsjahr</td> <td> <input name= "geb" type = "number" size = "30" maxlength = "40"  /></td></tr><br>
-			<tr><td>Favorit markieren</td> <td id= "checkbox"> <input type = "checkbox" size = "30" maxlength = "40"  /></td></tr><br>
+			<tr><td>R&uuml;ckennummer</td> <td> <input name= "rnr" type = "number" size = "30" maxlength = "40"  /></td></tr>
+			<tr><td>Geburtsjahr</td> <td> <input name= "geb" type = "number" size = "30" maxlength = "40"  /></td></tr>
+			<tr><td>Favorit markieren</td> <td class= "checkbox"> <input type = "checkbox" size = "30" maxlength = "40" /></td></tr>
            </table>
           
-			<div class= "button">
-           		<input type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form)">
+			<div class= "buttonmitte">
+           		<input class= "button" type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form)">
 			</div>
 	</form>		
 				
