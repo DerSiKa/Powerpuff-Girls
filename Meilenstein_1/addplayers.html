@@ -5,9 +5,13 @@
 
   <title>Powerpuff Girls</title>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
  	
 	<link rel="stylesheet" href="design/addplayers.css">
+	<script type="text/javascript" src="FormValidate.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	
 
 </head>
 
@@ -27,7 +31,7 @@
 	</header>
 			
 	<section>
-	<form onsubmit="return validateForm()" action="http://www.martinakraus.net/createPlayer.php" method="post" action="/139.59.134.26/POST/api/players">			 
+	<form onsubmit="validateForm()">			 
 			<table>
 			<h1>Hier f&uuml;gen Sie einen Spieler hinzu:</h1>	
 						
@@ -52,7 +56,7 @@
            </table>
           
 			<div class= "button">
-           		<button type="submit" name="Absenden" value="Absenden" onclick="return sendForm(this.form);">Absenden</button>
+           		<input type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form)">
 			</div>
 	</form>		
 				

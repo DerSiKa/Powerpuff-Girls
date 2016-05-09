@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   
   <link rel="stylesheet" href="design/players.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="FormValidate.js"></script>
   
 </head>
 
@@ -26,26 +28,16 @@
 	</header>
 	
 	<section>	
-	
+		    <input type="button" name="all" value="All" onclick="drawTable('http://139.59.134.26/api/players')">
+			
+		    <input type="button" name="favorites" value="Favorites" onclick="drawTable('http://139.59.134.26/api/players?favorites=true')">
 		
 			
-			<table>	
+			<table id="tabelle">	
 						
-			<tr><th colspan="3"><button name="All" value="All" onclick="return sendForm(this.form);">All</button></th> 
 			
-				<th colspan="3"><button name="All" value="All" onclick="return sendForm(this.form);">Favoriten</button></th></tr><br>
 			
 			<tr><td>Name</td> <td>Verein</td> <td>Coach</td> <td>Position</td> <td>Nummer</td> <td>Jahr</td></tr><br>
-		    
-		    <tr><td>Name 1</td> <td>Verein 1</td> <td>Coach 1</td> <td>Position 1</td> <td>Nummer 1</td> <td>Jahr 1</td></tr><br>
-			
-			<tr><td>Name 2</td> <td>Verein 2</td> <td>Coach 2</td> <td>Position 2</td> <td>Nummer 2</td> <td>Jahr 2</td></tr><br>
-			
-			<tr><td>Name 3</td> <td>Verein 3</td> <td>Coach 3</td> <td>Position 3</td> <td>Nummer 3</td> <td>Jahr 3</td></tr><br>
-			
-			
-			
-			
 			
            </table>
 			
