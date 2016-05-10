@@ -33,38 +33,38 @@
 <div>
     <h2>Hier f&uuml;gen Sie einen Spieler hinzu:</h2>
 
-    <form action="http://martinakraus.net/createPlayer.php" method="GET" onsubmit="validateForm();">
+    <form onsubmit="sendForm();">
         <table id="tabelle2">
 
             <tr>
-                <td>Vorname</td>
-                <td><label>
+                <td >Vorname</td>
+                <td>
                     <input name="vorname" id="vorname" type="text" size="30" maxlength="40">
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Nachname</td>
-                <td><label>
+                <td>
                     <input name="nachname" id="nachname" type="text" size="30" maxlength="40">
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Verein</td>
-                <td><label>
+                <td>
                     <input name="verein" id="verein" type="text" size="30" maxlength="40">
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Headcoach</td>
-                <td><label>
+                <td>
                     <input name="headcoach" id="headcoach" type="text" size="30" maxlength="40">
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Assistant Coach</td>
-                <td><label>
+                <td>
                     <input name="asscoach" id="asscoach" type="text" size="30" maxlength="40">
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Aktiv</td>
@@ -74,7 +74,7 @@
             <tr>
                 <td>Position</td>
                 <td>
-                    <label>
+                    
                         <select name="position" size="1">
                             <option value="center">Center</option>
                             <option value="guard">Guard</option>
@@ -82,30 +82,30 @@
                             <option value="wing" selected="selected">Wing</option>
                             <option value="smallforward">Small Forward</option>
                         </select>
-                    </label></td>
+                    ></td>
             </tr>
 
             <tr>
                 <td>R&uuml;ckennummer</td>
-                <td><label>
+                <td>
                     <input name="rnr" id="rnr" type="number" size="30" maxlength="40"/>
-                </label></td>
+                </td>
             </tr>
             <tr>
                 <td>Geburtsjahr</td>
                 <td>
-                    <label>
+                    
                         <input name="geb" id="geb" type="number" size="30" maxlength="40"/>
-                    </label>
+                    
                 </td>
             </tr>
             <tr>
                 <td>Favorit markieren</td>
                 <td class="checkbox">
 
-                    <label>
+                    
                         <input type="checkbox" size="30" maxlength="40"/>
-                    </label>
+                   
 
                 </td>
             </tr>

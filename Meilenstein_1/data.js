@@ -1,11 +1,11 @@
 function validateForm() {
 
 	var regexNames = /^[a-zäöü]+$/i;
-	var regexRuecken = ([4-15]);
-	var regexGeb = ([1-2015]);
+	var regexRuecken = /^[4-15]+$/i;
+	var regexGeb = /^[1-2015]+$/i;
 
 
-	var vorname = document.getElementsByName('vorname')[0].value;
+	var vorname = document.getElementsById('vorname')[0].value;
 	var nachname = document.getElementsByName('nachname')[0].value;
 	var verein = document.getElementsByName('verein')[0].value;
 	var headcoach = document.getElementsByName('hcoach')[0].value;
