@@ -107,7 +107,7 @@ body {
 section {
     text-algin: center;
     border-radius: 0;
-    padding: 150px 0;
+    padding: 50px 50px;
     background-image: url('./Hintergrund-schwarz.png');
 }
 section div{
