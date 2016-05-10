@@ -98,16 +98,31 @@ h1 {
 body {
     font-family: 'museo-sans-300', serif;
     font-size: 16px;
-    color: #E07F52;
+    color: black;
     text-align: center;
     background: #000000 no-repeat;
 }
+
 
 section {
     text-algin: center;
     border-radius: 0;
     padding: 150px 0;
     background-image: url('./Hintergrund-schwarz.png');
+}
+section div{
+	background-color: #E07F52;
+    width: 400px ;
+    padding: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 2px  hidden;
+    border-right: 12px  hidden;
+    border-bottom: 2px  hidden;
+    border-left: 12px  hidden;
+    border-radius: 20px 2px 20px 2px;
 }
 
 footer {

@@ -97,17 +97,40 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    color: black;
+    display: block;
+    margin: 0;
+    font-family: 'source-sans-700', serif;
+    font-size: 20px;
+}
+
 body {
     font-family: 'museo-sans-300', serif;
     font-size: 16px;
-    color: #E07F52;
+    color: black;
     text-align: center;
     background: #000000 no-repeat;
 }
+body section div{
+	background-color: #E07F52;
+    width: 400px ;
+    padding: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 2px  hidden;
+    border-right: 12px  hidden;
+    border-bottom: 2px  hidden;
+    border-left: 12px  hidden;
+    border-radius: 20px 2px 20px 2px;
+
+}
 
 section {
-    border-radius: 0;
     background-image: url('./Hintergrund-schwarz.png');
+    padding:50px;
 }
 
 table {
@@ -123,10 +146,7 @@ td {
     text-align: center;
 }
 
-.buttonmitte {
-    color: #000000;
-    text-align: center;
-}
+
 
 .button {
     color: #000000;

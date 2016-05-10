@@ -110,6 +110,20 @@ section {
     background-image: url('./Hintergrund-schwarz.png');
     padding: 150px 0;
 }
+section div{
+	background-color: #E07F52;
+    width: 400px ;
+    padding: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 2px  hidden;
+    border-right: 12px  hidden;
+    border-bottom: 2px  hidden;
+    border-left: 12px  hidden;
+    border-radius: 20px 2px 20px 2px;
+}
 
 table {
     margin-left: auto;
@@ -126,17 +140,18 @@ th {
 
 table, th, td {
     border-collapse: collapse;
-    border: 2px solid #E07F52;
+    border: 1px solid black;
 }
 
 .button {
     color: #000000;
     background-color: #E07F52;
     border-radius: 20px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     height: 24px;
     cursor: pointer;
     width: 100px;
+    margin: 20px;
 }
 
 tr:hover {
