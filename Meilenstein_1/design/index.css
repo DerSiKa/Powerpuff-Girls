@@ -114,8 +114,8 @@ section div{
 	background-color: #E07F52;
     width: 400px ;
     padding: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     border-top: 2px  hidden;
