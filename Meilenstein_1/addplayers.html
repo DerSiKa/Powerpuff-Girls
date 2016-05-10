@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <link rel="stylesheet" href="design/addplayers.css">
-    <script type="text/javascript" src="Data.js"></script>
+    <script type="text/javascript" src="data.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 
@@ -33,37 +33,37 @@
 <div>
     <h2>Hier f&uuml;gen Sie einen Spieler hinzu:</h2>
 
-    <form onsubmit="validateForm()">
-        <table>
+    <form action="http://martinakraus.net/createPlayer.php" method="GET" onsubmit="validateForm();">
+        <table id="tabelle2">
 
             <tr>
                 <td>Vorname</td>
                 <td><label>
-                    <input name="vorname" type="text" size="30" maxlength="40">
+                    <input name="vorname" id="vorname" type="text" size="30" maxlength="40">
                 </label></td>
             </tr>
             <tr>
                 <td>Nachname</td>
                 <td><label>
-                    <input name="nachname" type="text" size="30" maxlength="40">
+                    <input name="nachname" id="nachname" type="text" size="30" maxlength="40">
                 </label></td>
             </tr>
             <tr>
                 <td>Verein</td>
                 <td><label>
-                    <input name="verein" type="text" size="30" maxlength="40">
+                    <input name="verein" id="verein" type="text" size="30" maxlength="40">
                 </label></td>
             </tr>
             <tr>
                 <td>Headcoach</td>
                 <td><label>
-                    <input name="hcoach" type="text" size="30" maxlength="40">
+                    <input name="headcoach" id="headcoach" type="text" size="30" maxlength="40">
                 </label></td>
             </tr>
             <tr>
                 <td>Assistant Coach</td>
                 <td><label>
-                    <input name="asscoach" type="text" size="30" maxlength="40">
+                    <input name="asscoach" id="asscoach" type="text" size="30" maxlength="40">
                 </label></td>
             </tr>
             <tr>
@@ -88,14 +88,14 @@
             <tr>
                 <td>R&uuml;ckennummer</td>
                 <td><label>
-                    <input name="rnr" type="number" size="30" maxlength="40"/>
+                    <input name="rnr" id="rnr" type="number" size="30" maxlength="40"/>
                 </label></td>
             </tr>
             <tr>
                 <td>Geburtsjahr</td>
                 <td>
                     <label>
-                        <input name="geb" type="number" size="30" maxlength="40"/>
+                        <input name="geb" id="geb" type="number" size="30" maxlength="40"/>
                     </label>
                 </td>
             </tr>
@@ -112,7 +112,7 @@
         </table>
 
     
-            <input class="button" type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form)">
+            <input class="button" type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form);">
         
     </form>
 </div>

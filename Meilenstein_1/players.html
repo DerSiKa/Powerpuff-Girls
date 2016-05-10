@@ -6,11 +6,11 @@
 
     <link rel="stylesheet" href="design/players.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="Data.js"></script>
+    <script type="text/javascript" src="data.js"></script>
 
 </head>
 
-<body>
+<body onload="getPlayers(false);setAll()">
 <header>
 
     <h1>THE POWERPUFF GIRLS</h1>
@@ -26,27 +26,29 @@
 </header>
 
 <section>
-<div>
-    <input class="button" type="button" name="all" value="All" onclick="drawTable('http://139.59.134.26/api/players')">
+    <div>
+        <input class="button" type="button" name="all" value="All"
+               id="tableAll" onclick="getPlayers(false); toggleAll() ">
 
-    <input class="button" type="button" name="favorites" value="Favorites"
-           onclick="drawTable('http://139.59.134.26/api/players?favorites=true')">
-
-
-    <table id="tabelle">
+        <input class="button" type="button" name="favorites" value="Favorites"
+               id="tableFavorites" onclick="getPlayers(true); toggleFavorites()">
 
 
-        <tr>
-            <td>Name</td>
-            <td>Verein</td>
-            <td>Coach</td>
-            <td>Position</td>
-            <td>Nummer</td>
-            <td>Jahr</td>
-        </tr>
+        <table id="tabelle">
 
-    </table>
-</div>
+
+            <tr>
+                <td>Name</td>
+                <td>Verein</td>
+                <td>Coach</td>
+                <td>Position</td>
+                <td>Nummer</td>
+                <td>Jahr</td>
+            </tr>
+
+
+        </table>
+    </div>
 </section>
 
 <footer>
