@@ -33,8 +33,8 @@
 <div>
     <h2>Hier f&uuml;gen Sie einen Spieler hinzu:</h2>
 
-    <form onsubmit="sendForm();">
-        <table id="tabelle2">
+    <form onsubmit="sendForm(this.form);">
+        <table>
 
             <tr>
                 <td >Vorname</td>
@@ -110,11 +110,11 @@
                 </td>
             </tr>
         </table>
-
+</form>
     
             <input class="button" type="button" name="Absenden" value="Absenden" onclick="sendForm(this.form);">
         
-    </form>
+    
 </div>
 </section>
 

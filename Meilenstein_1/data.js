@@ -87,11 +87,11 @@ function getPlayers(favorites) {
 
 function setTable(dataArray) {
 	var table = document.getElementById("tabelle");
-	var array = dataArray;
+	var list = dataArray;
 	if (table.rows.length > 0) {
 		deleteTable(table);
 	}
-	array.forEach(function(data) {
+	list.forEach(function(data) {
 		var row = table.insertRow();
 		row.insertCell(0).innerHTML = data.name;
 		row.insertCell(1).innerHTML = data.club;
