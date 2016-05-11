@@ -1,50 +1,47 @@
 function validateForm() {
 
-	var regexNames = /^[a-zÃ¤Ã¶Ã¼]+$/i;
-	var regexRuecken = /^[4-15]+$/i;
-	var regexGeb = /^[1-2015]+$/i;
+	var regexNames = /^[a-zöüä]+$/i;
 
-
-	var vorname = document.getElementsById('vorname')[0].value;
+	var vorname = document.getElementsByName('vorname')[0].value;
 	var nachname = document.getElementsByName('nachname')[0].value;
 	var verein = document.getElementsByName('verein')[0].value;
-	var headcoach = document.getElementsByName('hcoach')[0].value;
+	var headcoach = document.getElementsByName('headcoach')[0].value;
 	var asscoach = document.getElementsByName('asscoach')[0].value;
 	var rnr = parseInt(document.getElementsByName('rnr')[0].value);
 	var geb = parseInt(document.getElementsByName('geb')[0].value);
 
-	if (regexNames.test(vorname.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	if (regexNames.test(vorname) === false) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexNames.test(nachname.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (regexNames.test(nachname) === false) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexNames.test(verein.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (regexNames.test(verein) === false) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexNames.test(headcoach.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (regexNames.test(headcoach) === false) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexNames.test(asscoach.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (regexNames.test(asscoach) === false) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexRuecken.test(rnr.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (rnr < 4 || rnr > 15) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 
-	else if (regexGeb.test(geb.value) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte Ã¼berprÃ¼fen Sie Ihre Eingaben.");
+	else if (geb < 1900 || geb > 2016) {
+		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
 		return false;
 	}
 	return true;
@@ -53,20 +50,20 @@ function validateForm() {
 function sendForm(form) {
 	var checked = validateForm(form);
 	if (checked) {
-		var form = document.forms.namedItem("createPlayer");
 		var formData = new FormData(form);
 		var xhr = new XMLHttpRequest();
 		xhr.open("POST","http://139.59.134.26/api/players", true);
-		xhr.onload = function(e) {
-			if (xhr.status == 200) {
-				alert("OK");
-				form.reset();
-			} else {
-				alert("Error: " + xhr.status);
-			}
-		};
 		xhr.send(formData);
-		console.log(formData);
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState == 4) {
+				if (xhr.status == 200) {
+					alert('Daten wurden erfolgreich übermittelt.');
+				}
+				else {
+					alert('Daten wurden nicht übermittelt.');
+				}
+			}
+		}
 	}
 }
 
@@ -77,12 +74,19 @@ function getPlayers(favorites) {
 		favCheck = "?favorites=true";
 	}
 	xhr.open("GET", "http://139.59.134.26/api/players"+favCheck, true);
-	xhr.setRequestHeader("Content-type","application/json");
-	xhr.onload = function(e) {
-		var data = JSON.parse(this.response);
-		setTable(data);
-	}
 	xhr.send();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var data = JSON.parse(xhr.response);
+				setTable(data);
+			}
+			else {
+				alert('Server antwortet nicht.');
+			}
+		}
+	}
+	
 }
 
 function setTable(dataArray) {
