@@ -1,17 +1,60 @@
-/**
- * Created by Svenja on 25.05.2016.
- */
-const http = require('http');
+const express = require('express');
+const server = express();
+const cors = require('express-cors');
 
-    const hostname = '127.0.0.1';
-    const port= 3000;
 
-    const server = http.createServer((req, res)) =>{
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
-    });
+var players = require('./allPlayers.json');
 
-    server.listen(port, hostname, () => {
-        console.log('Server running at http://$(hostname): $(port)/');
-    });
+server.use(cors({
+    allowedOrigins: ['*'] //all Origins are allowed
+}));
+
+
+function checkFavorit(player){
+    return players.favorite === 'true';
+}
+
+server.get('/api/players', (req, res) => {
+    var queryFavorites = req.query.favorites || 'false';
+    var querySearch = req.query.search || 'false';
+
+    var response;
+
+    if(queryFavorites === 'true') {
+        response = players.filter(checkFavorit); //TODO filter-Methode richtig implementieren
+    } else {
+        response = players;
+    }
+
+    if(querySearch !== 'false') {
+        response = response.filter(); //TODO filter richtig anwenden //char?
+    }
+
+    res.status(200).json(response);
+});
+
+
+server.delete('/api/players', (req, res)=> {
+    players.splice(req.param.id);
+});
+
+
+
+server.post('/api/players', (req,res) => {
+
+    if(req.body){
+        res.status(200).json({ message: 'Spieler wurde erfolgreich gespeichert' });
+    } else{
+        res.status(404).json({ message: 'Empty body is not allowed.' });
+    }
+});
+
+
+server.put('/api/players/:id', (req,res) => {
+    res.status(200).json({message: 'Spieler mit der ID '+ req.params.id + ' wurde erfolgreich geupdatet'});
+});
+
+server.listen(3000, () => {
+    console.log('Example app listening on port 3000!');
+});
+

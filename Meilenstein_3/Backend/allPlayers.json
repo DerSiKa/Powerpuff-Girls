@@ -1,6 +1,6 @@
 [
 {
-  "_id": "571fd560b7ff36ca05e5cdf1",
+  "id": "571fd560b7ff36ca05e5cdf1",
   "name": "Jackson",
   "vorname": "Michael",
   "club": "LAKERS",
@@ -12,7 +12,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf2",
+  "id": "571fd560b7ff36ca05e5cdf2",
   "name": "Jamez",
   "vorname": "Lebra",
   "club": "CAVALIERS",
@@ -24,7 +24,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf3",
+  "id": "571fd560b7ff36ca05e5cdf3",
   "name": "Currywurst",
   "vorname": "Stephan",
   "club": "WARRIORS",
@@ -36,7 +36,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf4",
+  "id": "571fd560b7ff36ca05e5cdf4",
   "name": "Mays",
   "vorname": "Watts",
   "club": "SPURS",
@@ -48,7 +48,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf5",
+  "id": "571fd560b7ff36ca05e5cdf5",
   "name": "Iniesta",
   "vorname": "Andres",
   "club": "HEAT",
@@ -60,7 +60,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf6",
+  "id": "571fd560b7ff36ca05e5cdf6",
   "name": "Jones",
   "vorname": "Jermain",
   "club": "MURICA",
@@ -72,7 +72,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf7",
+  "id": "571fd560b7ff36ca05e5cdf7",
   "name": "Alaba",
   "vorname": "David",
   "club": "BULLS",
@@ -84,7 +84,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf8",
+  "id": "571fd560b7ff36ca05e5cdf8",
   "name": "dos Santos Junior",
   "vorname": "Neymar",
   "club": "CELTICS",
@@ -96,7 +96,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdf9",
+  "id": "571fd560b7ff36ca05e5cdf9",
   "name": "Sneijder",
   "vorname": "Wesley",
   "club": "KNICKS",
@@ -108,7 +108,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda1",
+  "id": "571fd560b7ff36ca05e5cda1",
   "name": "Pogba",
   "vorname": "Paul",
   "club": "MAVERICKS",
@@ -120,7 +120,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda2",
+  "id": "571fd560b7ff36ca05e5cda2",
   "name": "Griezmann",
   "vorname": "Antoine",
   "club": "PACKERS",
@@ -132,7 +132,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda3",
+  "id": "571fd560b7ff36ca05e5cda3",
   "name": "Bale",
   "vorname": "Gareth",
   "club": "NUGGETS",
@@ -144,7 +144,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda4",
+  "id": "571fd560b7ff36ca05e5cda4",
   "name": "Schweinsteiger",
   "vorname": "Bastian",
   "club": "RAPTORS",
@@ -156,7 +156,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda5",
+  "id": "571fd560b7ff36ca05e5cda5",
   "name": "Hazard",
   "vorname": "Eden",
   "club": "76ERS",
@@ -168,7 +168,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda6",
+  "id": "571fd560b7ff36ca05e5cda6",
   "name": "Sturridge",
   "vorname": "Daniel",
   "club": "PISTONS",
@@ -180,7 +180,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda7",
+  "id": "571fd560b7ff36ca05e5cda7",
   "name": "Ibrahimovic",
   "vorname": "Zlatan",
   "club": "PACERS",
@@ -192,7 +192,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda8",
+  "id": "571fd560b7ff36ca05e5cda8",
   "name": "Aguero",
   "vorname": "Sergio",
   "club": "BULLETS",
@@ -204,7 +204,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cda9",
+  "id": "571fd560b7ff36ca05e5cda9",
   "name": "Aubameyang",
   "vorname": "Pierre-Emerick",
   "club": "BULLETS",
@@ -216,7 +216,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdb9",
+  "id": "571fd560b7ff36ca05e5cdb9",
   "name": "Robert",
   "vorname": "Lewandowski",
   "club": "ROCKETS",
@@ -228,7 +228,7 @@
 },
 
 {
-  "_id": "571fd560b7ff36ca05e5cdc1",
+  "id": "571fd560b7ff36ca05e5cdc1",
   "name": "Rooney",
   "vorname": "Wayne",
   "club": "HAWKS",
