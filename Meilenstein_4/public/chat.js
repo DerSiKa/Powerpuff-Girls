@@ -8,7 +8,7 @@ $(document).ready(() =>{
     socket.on('chat', (data) => {
         var zeit = new Date(data.zeit);
         $('#content').append(
-            $('<li></li>').append(
+            $('<br><li></li>').append(
                 // Uhrzeit
                 $('<span>').text('[' +
                     (zeit.getHours() < 10 ? '0' + zeit.getHours() : zeit.getHours())
