@@ -1,7 +1,9 @@
 $(document).ready(() =>{
     // WebSocket
     const socket = io.connect();
+    
     var verbunden = false;
+    
     // neue Nachricht
     socket.on('chat', (data) => {
         var zeit = new Date(data.zeit);
@@ -16,12 +18,17 @@ $(document).ready(() =>{
                 ),
                 // Name
                 $('<b>').text(typeof(data.name) != 'undefined' ? data.name + ': ' : ''),
+                
                 // Text
                 $('<span>').text(data.text))
         );
-        // nach unten scrollen
+        
+        
+        // automatisch nach unten scrollen bei neuer Nachricht
         $('body').scrollTop($('body')[0].scrollHeight);
     });
+    
+    
     // Nachricht senden
     function senden(){
         // Eingabefelder auslesen
@@ -36,9 +43,10 @@ $(document).ready(() =>{
         // Text-Eingabe leeren
         $('#text').val('');
     }
-    // bei einem Klick
+    // bei Klick auf Button senden
     $('#senden').click(senden);
-    // oder mit der Enter-Taste
+    
+    // bei Klick auf Enter-Taste senden
     $('#text').keypress(function (e) {
         if (e.which == 13) {
             senden();

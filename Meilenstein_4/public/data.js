@@ -1,6 +1,6 @@
 function validateForm() {
 
-	var regexNames = /^[a-zöüä]+$/i;
+	var regexNames = /^[a-zÃ¤Ã¶Ã¼]+$/i;
 
 	var vorname = document.getElementsByName('vorname')[0].value;
 	var nachname = document.getElementsByName('nachname')[0].value;
@@ -11,37 +11,37 @@ function validateForm() {
 	var geb = parseInt(document.getElementsByName('geb')[0].value);
 
 	if (regexNames.test(vorname) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (regexNames.test(nachname) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (regexNames.test(verein) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (regexNames.test(headcoach) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (regexNames.test(asscoach) === false) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (rnr < 4 || rnr > 15) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 
 	else if (geb < 1900 || geb > 2016) {
-		alert("Einige Angaben sind fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.");
+		alert("Einige Angaben sind fehlerhaft. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.");
 		return false;
 	}
 	return true;
@@ -52,15 +52,15 @@ function sendForm(form) {
 	if (checked) {
 		var formData = new FormData(form);
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST","http://139.59.134.26/api/players", true);
+		xhr.open("POST","localhost:3000/api/players", true);
 		xhr.send(formData);
 		xhr.onreadystatechange = function() {
 			if(xhr.readyState == 4) {
 				if (xhr.status == 200) {
-					alert('Daten wurden erfolgreich übermittelt.');
+					alert('Daten wurden erfolgreich Ã¼bermittelt.');
 				}
 				else {
-					alert('Daten wurden nicht übermittelt.');
+					alert('Daten wurden nicht Ã¼bermittelt.');
 				}
 			}
 		}
@@ -73,7 +73,7 @@ function getPlayers(favorites) {
 	if (favorites) {
 		favCheck = "?favorites=true";
 	}
-	xhr.open("GET", "http://139.59.134.26/api/players"+favCheck, true);
+	xhr.open("GET", "localhost:3000/api/players"+favCheck, true);
 	xhr.send();
 	xhr.onreadystatechange = function() {
 		if(xhr.readyState == 4) {
@@ -113,10 +113,3 @@ function deleteTable(table) {
 	}
 }
 
-function toggleAll(){
-	document.getElementById('tableAll');
-}
-
-function toggleFavorites(){
-	document.getElementById('tableFavorites');
-}
