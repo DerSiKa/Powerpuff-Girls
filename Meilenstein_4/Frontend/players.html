@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Powerpuff Girls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="stylesheet" href="design/players.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
+</head>
+
+<body onload="getPlayers(false);toggleAll();">
+<header>
+
+    <h1>THE POWERPUFF GIRLS</h1>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addplayers.html">Add Player</a></li>
+            <li><a class="active" href="players.html">Players</a></li>
+            <li><a href="chat.html">Chatroom</a></li>
+        </ul>
+    </div>
+
+
+</header>
+
+<section>
+    <div>
+        <input class="button" type="button" name="all" value="All"
+               id="tableAll" onclick="getPlayers(false); toggleAll()">
+
+        <input class="button" type="button" name="favorites" value="Favorites"
+               id="tableFavorites" onclick="getPlayers(true); toggleFavorites()">
+
+
+        <table id="tabelle">
+
+
+            <tr>
+                <td>Name</td>
+                <td>Verein</td>
+                <td>Coach</td>
+                <td>Position</td>
+                <td>Nummer</td>
+                <td>Jahr</td>
+            </tr>
+
+
+        </table>
+    </div>
+</section>
+
+<footer>
+    <img src="design/logo.png">
+</footer>
+<script src="design/index.js"></script>
+</body>
+
+
+</html>

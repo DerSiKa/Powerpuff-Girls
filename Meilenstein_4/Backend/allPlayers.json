@@ -1,0 +1,242 @@
+[
+{
+  "id": "571fd560b7ff36ca05e5cdf1",
+  "name": "Jackson",
+  "vorname": "Michael",
+  "club": "LAKERS",
+  "coach": "Chad Music",
+  "position": "Wing",
+  "number": 11,
+  "year": 1981,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf2",
+  "name": "Jamez",
+  "vorname": "Lebra",
+  "club": "CAVALIERS",
+  "coach": "Martin Abbott",
+  "position": "Center",
+  "number": 11,
+  "year": 1982,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf3",
+  "name": "Currywurst",
+  "vorname": "Stephan",
+  "club": "WARRIORS",
+  "coach": "Martin Abbott",
+  "position": "Small Forward",
+  "number": 11,
+  "year": 1983,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf4",
+  "name": "Mays",
+  "vorname": "Watts",
+  "club": "SPURS",
+  "coach": "Martin Abbott",
+  "position": "Power Forward",
+  "number": 11,
+  "year": 1984,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf5",
+  "name": "Iniesta",
+  "vorname": "Andres",
+  "club": "HEAT",
+  "coach": "Vicente del Bosque",
+  "position": "Small Forward",
+  "number": 5,
+  "year": 1985,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf6",
+  "name": "Jones",
+  "vorname": "Jermain",
+  "club": "MURICA",
+  "coach": "Jurgen Kliensmann",
+  "position": "Small Forward",
+  "number": 6,
+  "year": 1986,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf7",
+  "name": "Alaba",
+  "vorname": "David",
+  "club": "BULLS",
+  "coach": "Jupp Heynckes",
+  "position": "Power Forward",
+  "number": 7,
+  "year": 1987,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf8",
+  "name": "dos Santos Junior",
+  "vorname": "Neymar",
+  "club": "CELTICS",
+  "coach": "Luis Enrique",
+  "position": "Power Forward",
+  "number": 8,
+  "year": 1988,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdf9",
+  "name": "Sneijder",
+  "vorname": "Wesley",
+  "club": "KNICKS",
+  "coach": "Louis van Gaal",
+  "position": "Small Forward",
+  "number": 9,
+  "year": 1989,
+  "favorit": true
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda1",
+  "name": "Pogba",
+  "vorname": "Paul",
+  "club": "MAVERICKS",
+  "coach": "Guiseppe Allegri",
+  "position": "Guard",
+  "number": 10,
+  "year": 1990,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda2",
+  "name": "Griezmann",
+  "vorname": "Antoine",
+  "club": "PACKERS",
+  "coach": "Diego Simeone",
+  "position": "Power Forward",
+  "number": 11,
+  "year": 1991,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda3",
+  "name": "Bale",
+  "vorname": "Gareth",
+  "club": "NUGGETS",
+  "coach": "Zinedine Zidane",
+  "position": "Center",
+  "number": 12,
+  "year": 1992,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda4",
+  "name": "Schweinsteiger",
+  "vorname": "Bastian",
+  "club": "RAPTORS",
+  "coach": "Jogi Low",
+  "position": "Small Forward",
+  "number": 13,
+  "year": 1993,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda5",
+  "name": "Hazard",
+  "vorname": "Eden",
+  "club": "76ERS",
+  "coach": "Guus Hiddink",
+  "position": "Wing",
+  "number": 14,
+  "year": 1994,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda6",
+  "name": "Sturridge",
+  "vorname": "Daniel",
+  "club": "PISTONS",
+  "coach": "Jurgen Klopp",
+  "position": "Guard",
+  "number": 15,
+  "year": 1995,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda7",
+  "name": "Ibrahimovic",
+  "vorname": "Zlatan",
+  "club": "PACERS",
+  "coach": "Laurent Blanc",
+  "position": "Small Forward",
+  "number": 16,
+  "year": 1986,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda8",
+  "name": "Aguero",
+  "vorname": "Sergio",
+  "club": "BULLETS",
+  "coach": "Pep Guardiola",
+  "position": "Center",
+  "number": 17,
+  "year": 1987,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cda9",
+  "name": "Aubameyang",
+  "vorname": "Pierre-Emerick",
+  "club": "BULLETS",
+  "coach": "Thomas Tuchel",
+  "position": "Small Forward",
+  "number": 18,
+  "year": 1988,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdb9",
+  "name": "Robert",
+  "vorname": "Lewandowski",
+  "club": "ROCKETS",
+  "coach": "Carlo Ancelotti",
+  "position": "Center",
+  "number": 19,
+  "year": 1989,
+  "favorit": false
+},
+
+{
+  "id": "571fd560b7ff36ca05e5cdc1",
+  "name": "Rooney",
+  "vorname": "Wayne",
+  "club": "HAWKS",
+  "coach": "Jose Mourinho",
+  "position": "Guard",
+  "number": 20,
+  "year": 1990,
+  "favorit": false
+}
+
+]
