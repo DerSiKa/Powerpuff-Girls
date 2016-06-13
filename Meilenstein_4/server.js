@@ -1,6 +1,11 @@
 const express = require('express');
 const server = express();
 const cors = require('express-cors');
+const serveStatic = require('serve-static');
+const http = server.listen(3000, () => {
+    console.log('Example app listening on port 3000!');
+});
+const io = require ('socket.io')(http);
 
 
 var players = require('./allPlayers.json');
@@ -8,6 +13,8 @@ var players = require('./allPlayers.json');
 server.use(cors({
     allowedOrigins: ['*'] //all Origins are allowed
 }));
+
+server.use(serveStatic(__dirname + '/public'));
 
 server.get('/api/players', (req, res) => {
     var queryFavorites = req.query.favorites || 'false';
@@ -56,6 +63,17 @@ server.put('/api/players/:id', (req,res) => {
     res.status(200).json({message: 'Spieler mit der ID '+ req.params.id + ' wurde erfolgreich geupdatet'});
 });
 
-server.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+io.sockets.on('connection', socket =>{
+    socket.emit('chat', {zeit: new Date(), text: 'Willkommen, bitte gebe deinen Usernamen ein'});
+
+    socket.on('login', (benutzername) => {
+        socket.username = benutzername;
+        socket.emit('chat', {zeit: new Date(), text: 'Willkommen ' + benutzername});
+    });
+
+    socket.on('chat', data => {
+        io.sockets.emit('chat', {zeit: new Date(), name: socket.username || 'Anonym', text: data});
+    });
 });
+
+

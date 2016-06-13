@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Powerpuff Girls</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="UTF-8">
+
+    <link rel="stylesheet" href="design/chat.css">
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="./chat.js"></script>
+</head>
+
+<body>
+<header>
+
+    <h1>THE POWERPUFF GIRLS</h1>
+
+
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addplayers.html">Add Player</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a class="active" href="chat.html">Chatroom</a></li>
+        </ul>
+    </div>
+</header>
+
+<section>
+    <div>
+
+        <ul id="content"></ul>
+        <div id="inputs">
+            <input id="text" type="text" placeholder="schreibe etwas..."/>
+            <input id="senden" type="submit" value="senden"/>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <img src="design/logo.png">
+</footer>
+</body>
+
+
+</html>

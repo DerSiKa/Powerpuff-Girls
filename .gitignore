@@ -1,2 +1,4 @@
 /Meilenstein_3/Backend/node_modules
-/Meilenstein_4/Backend/node_modules
+/Meilenstein_4/node_modules
+.project
+.idea/*
