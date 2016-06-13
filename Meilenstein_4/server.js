@@ -3,7 +3,7 @@ const server = express();
 const cors = require('express-cors');
 const serveStatic = require('serve-static');
 const http = server.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+    console.log('Server listening on port 3000 (localhost)!');
 });
 const io = require ('socket.io')(http);
 
